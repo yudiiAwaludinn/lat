@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<title>ATM - Tarik Tunai</title>
+	</head>
+	<body class="bg-slate-700 flex justify-center h-[100vh]">
+		<div class="container bg-[#597298] w-10/12 rounded-lg my-10 flex">
+			<div
+				class="w-8/12 flex flex-col justify-center items-center text-[28pt] font-mono pl-24"
+			>
+				<h1 class="text-white text-center mb-8">
+					Silahkan Pilih Paket Nominal
+				</h1>
+				<div class="flex">
+					<div class="text-white text-3xl mr-28 space-y-5 bg-">
+						<div class="">
+							<button onclick="pilihNominal(nominal.seratus)">
+								<- 100.000
+							</button>
+						</div>
+						<div class="">
+							<button onclick="pilihNominal(nominal.duaratus)">
+								<- 200.000
+							</button>
+						</div>
+						<div class="">
+							<button onclick="pilihNominal(nominal.tigaratus)">
+								<- 300.000
+							</button>
+						</div>
+						<div class="">
+							<a class="flex" href="">
+								<p><-</p>
+								<div class="text-left ml-5">
+									<p>Nominal</p>
+									<p>Lain</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="text-white text-3xl text-right space-y-5">
+						<div class="">
+							<button onclick="pilihNominal(nominal.limaratus)">
+								500.000 ->
+							</button>
+						</div>
+						<div class="">
+							<button onclick="pilihNominal(nominal.satujuta)">
+								1.000.000 ->
+							</button>
+						</div>
+						<div class="">
+							<button onclick="pilihNominal(nominal.satusetengah)">
+								1.500.000 ->
+							</button>
+						</div>
+						<div class="">
+							<button class="flex" onclick="transaksiLain()">
+								<div class="text-right mr-5">
+									<p>Transaksi</p>
+									<p>Lain</p>
+								</div>
+								<p>-></p>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-img flex justify-end w-5/12">
+				<img
+					src="./src/images/ambil-uang.jpg"
+					alt="ambil-uang"
+					class="rounded-lg w-[90%]"
+				/>
+			</div>
+		</div>
+		<script src="./src/script/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>ATM - Masukan Pin</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-[#324154] px-28 py-10 h-[100vh] flex items-center">
+		<div class="container bg-[#597298] rounded-lg flex">
+			<div
+				class="menu w-10/12 flex flex-col justify-center text-white text-center text-3xl font-mono px-10 py-36 space-y-5"
+			>
+				<h1>Silahkan Masukan Pin Anda</h1>
+				<div class="flex items-center space-x-2">
+					<input
+						class="m-5 w-5/12 text-black text-center rounded-lg py-1"
+						type="password"
+						name="pin"
+						id="pin"
+					/>
+					<button class="text-green-300" onclick="cekpin()">ENTER>></button>
+					<a class="text-red-300" href="./ambilKartu.html">CANCEL>></a>
+				</div>
+				<div class="flex">
+					<h1 class="text-white">Tekan "CANCEL" Untuk Membatalkan</h1>
+				</div>
+			</div>
+			<div class="container-img flex">
+				<img
+					src="./src/images/masukan-pin.jpg"
+					alt="masukan-pin"
+					class="rounded-lg w-[90%]"
+				/>
+			</div>
+		</div>
+		<script src="./src/script/script.js"></script>
+	</body>
+</html>
